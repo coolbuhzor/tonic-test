@@ -3,16 +3,21 @@ import Link from "next/link";
 import Image from "next/image";
 
 import logo from "../../assets/svg/Logo.svg";
+import Hamburger from "../../assets/svg/hamburger.svg";
+import Close from "../../assets/svg/close-icon.svg";
 import { Button } from "../buttons";
+import MobileNav from "./mobile-nav";
 
 const NavBar = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState<any>(false);
+  const [showNav, setShowNav] = useState(false);
   const handleScroll = () => {
     window.scrollY > 10
       ? setClientWindowHeight(true)
       : setClientWindowHeight(false);
   };
 
+  const handleNav = () => setShowNav(!showNav);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -54,6 +59,17 @@ const NavBar = () => {
           text="login"
         />
       </div>
+
+      {/* mobile nav */}
+      <div onClick={handleNav} className="flex lg:hidden">
+        {showNav ? (
+          <Image src={Close} alt="hamburger-menu" />
+        ) : (
+          <Image src={Hamburger} alt="hamburger-menu" />
+        )}
+      </div>
+
+      {showNav && <MobileNav />}
     </nav>
   );
 };

@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <TextSmall className="text-[#777777] font-sans hover:scale-110 cursor-pointer">
+      <TextSmall className="text-[#777777] font-sans  cursor-pointer">
         All rights reserved.
       </TextSmall>
     </section>
