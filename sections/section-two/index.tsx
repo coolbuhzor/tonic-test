@@ -34,7 +34,7 @@ const SectionTwo = () => {
     },
   ];
   return (
-    <section className="w-full pt-[82px] px-[50px]  lg:px-[150px] max-w-[1440px]">
+    <section className="w-full pt-[82px] px-[50px]  lg:px-[100px] xl:px-[150px] max-w-[1440px]">
       <div className="flex flex-col items-center justify-center w-full text-center">
         <TextMedium className="text-[#777777]">Our Services</TextMedium>
         <H2 className="max-w-[842px] ">
@@ -44,7 +44,7 @@ const SectionTwo = () => {
       <div className="flex flex-col lg:flex-row lg:justify-between items-center justify-center w-full mt-[78px] ">
         {serviceData.map((data) => (
           <div
-            className="max-w-[300px] mt-[50px] lg:mt-[unset]  "
+            className=" lg:w-[250px] xl:w-[300px] max-w-[300px] mt-[50px] lg:mt-[unset]  "
             key={data.id}
           >
             <Image src={data.img} alt="card-image" />

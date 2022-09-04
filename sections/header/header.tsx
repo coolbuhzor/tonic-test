@@ -10,13 +10,13 @@ import { H2, TextSmall } from "../../components/typography/typography";
 const Header = () => {
   return (
     <div
-      className={` relative w-full flex flex-col justify-center py-[50px] lg:h-screen bg-[url('../assets/svg/background.svg')] bg-cover bg-center bg-no-repeat `}
+      className={` relative w-full flex flex-col justify-center py-[50px] lg:py-[62px]  bg-[url('../assets/svg/background.svg')] bg-cover bg-center bg-no-repeat `}
     >
       <NavBar />
       <section className="flex  flex-col items-center justify-center h-full mt-[100px]  px-[50px] lg:px-[100px] max-w-[1440px] ">
         <div className="flex flex-col w-full lg:flex-row lg:justify-between ">
           <div className="w-full lg:w-[55%] xl:w-[560px]  h-full justify-center flex flex-col">
-            <H2 className="text-white">
+            <H2 className="text-[#fff]">
               Save time by building fast with Boldo Template
             </H2>
             <TextSmall className="text-light-grey">

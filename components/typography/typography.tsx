@@ -13,22 +13,22 @@ export const H2 = (props: TextProps) => (
   </h2>
 );
 export const H3 = (props: TextProps) => (
-  <h2
+  <h3
     className={`font-normal leading-[3.5rem] font-manrope text-[2.25rem] text-black ${props.className}`}
   >
     {props.children}
-  </h2>
+  </h3>
 );
 export const H4 = (props: TextProps) => (
-  <h2
+  <h4
     className={`font-normal leading-[3rem] font-manrope text-[1.75rem] text-black ${props.className}`}
   >
     {props.children}
-  </h2>
+  </h4>
 );
 export const Paragraph = (props: TextProps) => (
   <p
-    className={`font-normal leading-[2.25] font-manrope text-[1.5rem] text-black ${props.className}`}
+    className={`font-normal leading-[2.25rem] font-manrope text-[1.5rem] text-black ${props.className}`}
   >
     {props.children}
   </p>
