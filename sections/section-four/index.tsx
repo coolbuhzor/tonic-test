@@ -7,7 +7,6 @@ import {
   TextMedium,
 } from "../../components/typography/typography";
 import arrowRight from "../../assets/svg/arrow-right.svg";
-import arrowLeft from "../../assets/svg/arrow-right.svg";
 import img1 from "../../assets/svg/ellipse-1.svg";
 import img2 from "../../assets/svg/ellipse-2.svg";
 import img3 from "../../assets/svg/ellipse-3.svg";
@@ -19,18 +18,21 @@ const SectionFour = () => {
       text: `“Buyer buzz partner network disruptive non-disclosure agreement business”`,
       name: "Albus Dumbledore",
       position: "Manager @ Howarts",
+      img: img1,
     },
     {
       id: 2,
       text: `“Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.”`,
       name: "Severus Snape",
       position: "Manager @ Slytherin",
+      img: img2,
     },
     {
       id: 3,
       text: `“Release facebook responsive web design business model canvas seed money monetization.”`,
       name: "Harry Potter",
       position: "Team Leader @ Gryffindor",
+      img: img3,
     },
   ];
   return (
@@ -59,7 +61,7 @@ const SectionFour = () => {
             {/* 1st card */}
             <Paragraph className="font-sans">{data.text}</Paragraph>
             <div className="flex  w-full mt-[43px] items-center">
-              <Image src={img1} alt="" />
+              <Image src={data.img} alt="" />
               <aside className="ml-[16px]">
                 <TextMedium className="font-sans">{data.name}</TextMedium>
                 <p className="font-sans text-[14px] leading-[32px]">

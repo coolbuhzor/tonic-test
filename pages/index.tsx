@@ -2,7 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../sections/header/header";
+import SectionFive from "../sections/section-five";
 import SectionFour from "../sections/section-four";
+import SectionSix from "../sections/section-six/section-six";
 import SectionThree from "../sections/section-three";
 import SectionTwo from "../sections/section-two";
 import styles from "../styles/Home.module.css";
@@ -21,6 +23,8 @@ const Home: NextPage = () => {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        <SectionFive />
+        <SectionSix />
       </main>
 
       <footer className={styles.footer}>

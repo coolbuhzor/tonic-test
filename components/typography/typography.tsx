@@ -14,7 +14,7 @@ export const H2 = (props: TextProps) => (
 );
 export const H3 = (props: TextProps) => (
   <h3
-    className={`font-normal leading-[3.5rem] font-manrope text-[2.25rem] text-black ${props.className}`}
+    className={`font-normal    lg:leading-[3.5rem]  font-manrope  text-[1.75rem] lg:text-[2.25rem] text-black ${props.className}`}
   >
     {props.children}
   </h3>
@@ -46,11 +46,4 @@ export const TextSmall = (props: TextProps) => (
   >
     {props.children}
   </p>
-);
-export const ATag = (props: TextProps) => (
-  <a
-    className={`font-[600] leading-[1.75rem] font-sans text-[1rem] text-white cursor-pointer ${props.className}`}
-  >
-    {props.children}
-  </a>
 );
