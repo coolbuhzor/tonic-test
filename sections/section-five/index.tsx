@@ -49,7 +49,7 @@ const SectionFive = () => {
   return (
     <section className="w-full py-[120px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-white">
       <div className="relative w-full">
-        <Image src={image} alt="work-image" layout="responsive" />
+        <Image src={image} alt="work-image" layout="responsive" priority />
         <div className="flex flex-col justify-between items-center lg:flex-row mt-[56px]">
           <div className="w-full lg:w-[43%] xl:w-[500px]">
             <H3>
@@ -62,13 +62,13 @@ const SectionFive = () => {
             <div className="flex items-center justify-between border-b border-[#c4c4c4]">
               <TextMedium>We connect our customers with the best?</TextMedium>
               <div>
-                <Image src={pointer} alt="pointer" />
+                <Image src={pointer} alt="pointer" priority />
               </div>
             </div>
             <div className="flex items-center justify-between border-b border-[#c4c4c4]">
               <TextMedium>We connect our customers with the best?</TextMedium>
               <div>
-                <Image src={pointer} alt="pointer" />
+                <Image src={pointer} alt="pointer" priority />
               </div>
             </div>
           </div>
@@ -88,7 +88,12 @@ const SectionFive = () => {
               className=" lg:w-[250px] xl:w-[300px] max-w-[300px] mt-[50px] lg:mt-[unset] "
               key={data.id}
             >
-              <Image src={data.img} objectFit="contain" alt="card-image" />
+              <Image
+                src={data.img}
+                objectFit="contain"
+                alt="card-image"
+                priority
+              />
               <div>
                 <div className="flex items-center w-full ">
                   <p className="font-sans text-[1rem] leading-[28px] font-bold text-primary">
@@ -103,7 +108,7 @@ const SectionFive = () => {
                 </TextMedium>
               </div>
               <div className="flex items-center w-full mt-[20px] ">
-                <Image src={data.photo} alt="right-arrow" />
+                <Image src={data.photo} alt="right-arrow" priority />
                 <p className="font-normal text-black leading-[28px] ml-[12px]">
                   {data.name}
                 </p>

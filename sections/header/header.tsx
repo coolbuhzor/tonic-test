@@ -37,11 +37,11 @@ const Header = () => {
             </div>
           </div>
           <div className="w-full justify-center  flex mt-[50px] lg:mt-[unset] lg:w-[40%] xl:w-[493.86px] ">
-            <Image src={heroImg} alt="hero-image" />
+            <Image src={heroImg} alt="hero-image" priority />
           </div>
         </div>
         <div className="flex  lg:mt-[56px] w-full h-[112px]">
-          <Image src={logoWall} alt="logo-wall" />
+          <Image src={logoWall} alt="logo-wall" priority />
         </div>
       </section>
     </div>

@@ -26,7 +26,7 @@ const SectionThree = () => {
       {/* 1st section */}
       <div className="flex flex-col items-center justify-between w-full lg:flex-row">
         <div className="w-full lg:w-[40%] minXl:w-[494px] max-w-[494px]">
-          <Image src={man} alt="man-image" />
+          <Image src={man} alt="man-image" priority />
         </div>
         <div className="flex w-full lg:w-[45%] minXl:w-[497px] justify-center flex-col ">
           <H3>
@@ -39,7 +39,13 @@ const SectionThree = () => {
                 className="flex items-center mb-[24px] minXl:mb-[unset] "
                 key={data.id}
               >
-                <Image src={check} alt="check-icon" width={36} height={36} />
+                <Image
+                  src={check}
+                  alt="check-icon"
+                  width={36}
+                  height={36}
+                  priority
+                />
                 <TextMedium className=" ml-[27px]">{data.text}</TextMedium>
               </div>
             ))}
@@ -55,7 +61,7 @@ const SectionThree = () => {
           <H3>
             We connect our customers with the best, and help them keep up-and
             stay open.
-            <Image src={sun} alt="sun-icon" />
+            <Image src={sun} alt="sun-icon" priority />
           </H3>
           <div className="mt-[40px] flex-col flex justify-between">
             {customerText.map((data) => (
@@ -65,7 +71,7 @@ const SectionThree = () => {
                 } `}
                 key={data.id}
               >
-                <Image src={data.img} alt="check-icon" />
+                <Image src={data.img} alt="check-icon" priority />
                 <TextSmall
                   className={` ml-[16px] ${
                     data.id === 1 ? "text-[#fff]" : "text-primary"
@@ -78,7 +84,7 @@ const SectionThree = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] minXl:w-[494px] max-w-[494px]">
-          <Image src={woman} alt="man-image" />
+          <Image src={woman} alt="man-image" priority />
         </div>
       </div>
     </section>

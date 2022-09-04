@@ -44,7 +44,7 @@ const SectionFour = () => {
 
         <div className="flex lg:self-end mt-[20px]">
           <button className="h-[72px] w-[72px] rotate-[-180deg] rounded-[50%] hover:scale-105 bg-white">
-            <Image src={arrowRight} alt="right-arrow" />
+            <Image src={arrowRight} alt="right-arrow" priority />
           </button>
           <button className="h-[72px] w-[72px] rounded-[50%] hover:scale-105 bg-white ml-[15px]">
             <Image src={arrowRight} alt="right-arrow" />
@@ -61,7 +61,7 @@ const SectionFour = () => {
             {/* 1st card */}
             <Paragraph className="font-sans">{data.text}</Paragraph>
             <div className="flex  w-full mt-[43px] items-center">
-              <Image src={data.img} alt="" />
+              <Image src={data.img} alt="example-image" priority />
               <aside className="ml-[16px]">
                 <TextMedium className="font-sans">{data.name}</TextMedium>
                 <p className="font-sans text-[14px] leading-[32px]">
