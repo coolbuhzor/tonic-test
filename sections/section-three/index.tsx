@@ -56,12 +56,11 @@ const SectionThree = () => {
         </div>
       </div>
       {/* second section */}
-      <div className="flex flex-col items-center justify-between w-full lg:flex-row mt-[120px] lg:mt-[unset]">
+      <div className="flex flex-col items-center justify-between w-full lg:flex-row mt-[120px] xl:mt-[unset]">
         <div className="flex w-full lg:w-[45%] minXl:w-[497px] justify-center flex-col ">
           <H3>
             We connect our customers with the best, and help them keep up-and
             stay open.
-            <Image src={sun} alt="sun-icon" priority />
           </H3>
           <div className="mt-[40px] flex-col flex justify-between">
             {customerText.map((data) => (

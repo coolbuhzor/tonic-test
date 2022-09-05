@@ -46,7 +46,7 @@ const SectionFour = () => {
           <button className="h-[72px] w-[72px] rotate-[-180deg] rounded-[50%] hover:scale-105 bg-white">
             <Image src={arrowRight} alt="right-arrow" priority />
           </button>
-          <button className="h-[72px] w-[72px] rounded-[50%] hover:scale-105 bg-white ml-[15px]">
+          <button className="h-[72px] w-[72px] rounded-[50%] hover:scale-105 bg-white ml-[28px]">
             <Image src={arrowRight} alt="right-arrow" />
           </button>
         </div>

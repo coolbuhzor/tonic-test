@@ -47,10 +47,14 @@ const SectionTwo = () => {
             className=" lg:w-[250px] xl:w-[300px] max-w-[300px] mt-[50px] lg:mt-[unset]  "
             key={data.id}
           >
-            <Image src={data.img} alt="card-image" priority />
+            <Image src={data.img} alt="card-image" className="m-0" priority />
             <div>
-              <Paragraph>{data.header}</Paragraph>
-              <TextMedium className="text-[#777777]">{data.text}</TextMedium>
+              <Paragraph className="mt-[24px] pb-[12px]">
+                {data.header}
+              </Paragraph>
+              <TextMedium className="text-[#777777] pb-[28px]">
+                {data.text}
+              </TextMedium>
             </div>
             <Link href="">
               <a className="transition ease-in-out delay-150 font-sans font-bold text-[1.25rem] border-b  border-primary pb-2 flex items-center leading-[2.25rem]  hover:scale-110 duration-100">

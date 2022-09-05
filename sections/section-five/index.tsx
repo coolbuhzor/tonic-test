@@ -47,7 +47,7 @@ const SectionFive = () => {
     },
   ];
   return (
-    <section className="w-full py-[120px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-white">
+    <section className="w-full py-[124px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-white">
       <div className="relative w-full">
         <Image src={image} alt="work-image" layout="responsive" priority />
         <div className="flex flex-col justify-between items-center lg:flex-row mt-[56px]">
@@ -59,13 +59,13 @@ const SectionFive = () => {
           </div>
 
           <div className="h-[140px] w-full lg:w-[43%] xl:w-[500px] mt-[50px] lg:mt-[unset] flex flex-col justify-between">
-            <div className="flex items-center justify-between border-b border-[#c4c4c4]">
+            <div className="flex items-center justify-between border-b pb-[16px] border-[#c4c4c4]">
               <TextMedium>We connect our customers with the best?</TextMedium>
               <div>
                 <Image src={pointer} alt="pointer" priority />
               </div>
             </div>
-            <div className="flex items-center justify-between border-b border-[#c4c4c4]">
+            <div className="flex items-center justify-between border-b pb-[16px] border-[#c4c4c4]">
               <TextMedium>We connect our customers with the best?</TextMedium>
               <div>
                 <Image src={pointer} alt="pointer" priority />
@@ -95,7 +95,7 @@ const SectionFive = () => {
                 priority
               />
               <div>
-                <div className="flex items-center w-full ">
+                <div className="flex items-center w-full mt-[24px] ">
                   <p className="font-sans text-[1rem] leading-[28px] font-bold text-primary">
                     Category
                   </p>
@@ -103,7 +103,7 @@ const SectionFive = () => {
                     {data.date}
                   </TextSmall>
                 </div>
-                <TextMedium className="font-sans text-left h-[99px]">
+                <TextMedium className="font-sans mt-[12px] text-left h-[99px]">
                   {data.text}
                 </TextMedium>
               </div>
