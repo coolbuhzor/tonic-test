@@ -77,8 +77,10 @@ const SectionFive = () => {
 
       <div className="w-full mt-[156px] text-center">
         <div className="flex flex-col justify-center w-full ">
-          <TextMedium className="font-sans text-[#777]">Our Blog</TextMedium>
-          <div className="max-w-[842px] flex self-center">
+          <TextMedium className="font-sans text-[#777] text-left md:text-center w-full">
+            Our Blog
+          </TextMedium>
+          <div className="max-w-[842px] flex self-center text-left md:text-center">
             <H2>Value proposition accelerator product management venture</H2>
           </div>
         </div>

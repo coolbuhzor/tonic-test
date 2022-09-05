@@ -19,20 +19,28 @@ class MyDocument extends Document {
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
+            as="font"
             crossOrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+            as="font"
             rel="stylesheet"
           />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+            as="font"
+          />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
+            as="font"
             crossOrigin="true"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            as="font"
             rel="stylesheet"
           />
         </Head>

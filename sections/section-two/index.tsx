@@ -35,9 +35,11 @@ const SectionTwo = () => {
   ];
   return (
     <section className="w-full pt-[82px] px-[50px]  lg:px-[100px] xl:px-[150px] max-w-[1440px]">
-      <div className="flex flex-col items-center justify-center w-full text-center">
-        <TextMedium className="text-[#777777]">Our Services</TextMedium>
-        <H2 className="max-w-[842px] ">
+      <div className="flex flex-col items-center justify-center w-full text-left md:text-center">
+        <TextMedium className="text-[#777777]  text-left w-full md:text-center">
+          Our Services
+        </TextMedium>
+        <H2 className="max-w-[842px] text-left md:text-center ">
           Handshake infographic mass market crowdfunding iteration.
         </H2>
       </div>
@@ -56,7 +58,7 @@ const SectionTwo = () => {
                 {data.text}
               </TextMedium>
             </div>
-            <Link href="">
+            <Link href="#">
               <a className="transition ease-in-out delay-150 font-sans font-bold text-[1.25rem] border-b  border-primary pb-2 flex items-center leading-[2.25rem]  hover:scale-110 duration-100">
                 Explore page &nbsp;{" "}
                 <Image src={arrowRight} alt="right-arrow" priority />
