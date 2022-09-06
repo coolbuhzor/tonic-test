@@ -47,7 +47,10 @@ const SectionFive = () => {
     },
   ];
   return (
-    <section className="w-full py-[124px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-white">
+    <section
+      data-testid="section-five"
+      className="w-full py-[124px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-white"
+    >
       <div className="relative w-full">
         <Image src={image} alt="work-image" layout="responsive" priority />
         <div className="flex flex-col justify-between items-center lg:flex-row mt-[56px]">

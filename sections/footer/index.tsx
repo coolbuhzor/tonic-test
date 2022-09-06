@@ -21,7 +21,10 @@ const Footer = () => {
     { id: 3, text: "Services" },
   ];
   return (
-    <section className="pt-[100px] pb-[117px] px-[50px] lg:px-[100px] max-w-[1440px]  ">
+    <section
+      data-testid="footer"
+      className="pt-[100px] pb-[117px] px-[50px] lg:px-[100px] max-w-[1440px]  "
+    >
       <footer className="flex  flex-col items-start  justify-between lg:flex-row w-full mt-[100px]  ">
         <div className="w-full lg:w-[300px] h-[172px]">
           <Image src={logo} alt="dark-logo" priority />

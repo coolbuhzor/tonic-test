@@ -22,7 +22,10 @@ const SectionThree = () => {
   ];
 
   return (
-    <section className="w-full pt-[197px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px]">
+    <section
+      data-testid="section-three"
+      className="w-full pt-[197px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px]"
+    >
       {/* 1st section */}
       <div className="flex flex-col items-center justify-between w-full lg:flex-row">
         <div className="w-full lg:w-[40%] minXl:w-[494px] max-w-[494px]">

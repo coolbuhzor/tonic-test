@@ -36,7 +36,10 @@ const SectionFour = () => {
     },
   ];
   return (
-    <section className="w-full py-[96px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-primary">
+    <section
+      data-testid="section-four"
+      className="w-full py-[96px] px-[50px]  lg:px-[100px] xl:px-[150px]  max-w-[1440px] bg-primary"
+    >
       <div className="flex flex-col justify-between w-full lg:flex-row">
         <H2 className="text-[#fff] w-full lg:w-[716px]">
           An enterprise template to ramp up your company website

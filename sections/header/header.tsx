@@ -10,6 +10,7 @@ import { H2, TextSmall } from "../../components/typography/typography";
 const Header = () => {
   return (
     <div
+      data-testid="header"
       className={` relative w-full flex flex-col justify-center py-[50px] lg:py-[62px]  bg-[url('../assets/svg/background.svg')] bg-cover bg-center bg-no-repeat `}
     >
       <NavBar />

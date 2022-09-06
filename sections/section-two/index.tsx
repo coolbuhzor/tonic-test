@@ -34,7 +34,10 @@ const SectionTwo = () => {
     },
   ];
   return (
-    <section className="w-full pt-[82px] px-[50px]  lg:px-[100px] xl:px-[150px] max-w-[1440px]">
+    <section
+      data-testid="section-two"
+      className="w-full pt-[82px] px-[50px]  lg:px-[100px] xl:px-[150px] max-w-[1440px]"
+    >
       <div className="flex flex-col items-center justify-center w-full text-left md:text-center">
         <TextMedium className="text-[#777777]  text-left w-full md:text-center">
           Our Services

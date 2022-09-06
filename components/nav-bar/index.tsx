@@ -25,6 +25,7 @@ const NavBar = () => {
 
   return (
     <nav
+      data-testid="nav-bar"
       className={`flex w-full fixed  px-[50px] lg:px-[100px] items-center justify-between  max-w-[1440px] z-[10] ${
         clientWindowHeight
           ? "top-0 bg-primary h-[80px] "
